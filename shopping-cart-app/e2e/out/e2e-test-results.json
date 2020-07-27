@@ -1,0 +1,60 @@
+[
+  {
+    "description": "    In order to see product\n    As a user \n    I want to be able to view products list",
+    "keyword": "Feature",
+    "name": "View products",
+    "line": 1,
+    "id": "view-products",
+    "tags": [],
+    "uri": "e2e\\src\\features\\smoke.feature",
+    "elements": [
+      {
+        "id": "view-products;a-user-can-view-products",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "A User can view products",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to the Products list",
+            "match": {
+              "location": "e2e\\src\\steps\\smoke.steps.ts:18"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3000000,
+              "error_message": "TypeError: browser.navigateTo is not a function\n    at World.<anonymous> (D:\\Natasha\\finhome AG task\\shopping-cart-app-with-complex-table\\e2e\\src\\steps\\smoke.steps.ts:21:19)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Products are displayed",
+            "match": {
+              "location": "e2e\\src\\steps\\smoke.steps.ts:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
